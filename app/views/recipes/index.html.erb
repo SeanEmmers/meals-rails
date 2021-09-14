@@ -8,6 +8,7 @@
       <th>Recipe name</th>
       <th>Ingredients</th>
       <th>Diet</th>
+      <th>Description</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,6 +19,7 @@
         <td><%= recipe.recipe_name %></td>
         <td><%= recipe.ingredients %></td>
         <td><%= recipe.diet %></td>
+        <td><%= recipe.description %></td>
         <td><%= link_to 'Show', recipe %></td>
         <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
         <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
