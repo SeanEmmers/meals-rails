@@ -2,31 +2,35 @@
 
 <h1>Recipes</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Recipe name</th>
-      <th>Ingredients</th>
-      <th>Diet</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @recipes.each do |recipe| %>
+<div class='table-responsive'>
+  <table class='table align-middle'>
+    <thead>
       <tr>
-        <td><%= recipe.recipe_name %></td>
-        <td><%= recipe.ingredients %></td>
-        <td><%= recipe.diet %></td>
-        <td><%= recipe.description %></td>
-        <td><%= link_to 'Show', recipe %></td>
-        <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
-        <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Recipe name</th>
+        <th>Ingredients</th>
+        <th>Diet</th>
+        <th>Meal Type</th>
+        <th>Description</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+
+    <tbody>
+      <% @recipes.each do |recipe| %>
+        <tr>
+          <td><%= recipe.recipe_name %></td>
+          <td><%= recipe.ingredients %></td>
+          <td><%= recipe.diet %></td>
+          <td><%= recipe.meal_type %></td>
+          <td><%= recipe.description %></td>
+          <td><%= link_to 'Show', recipe %></td>
+          <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
+          <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
 
 <br>
 
