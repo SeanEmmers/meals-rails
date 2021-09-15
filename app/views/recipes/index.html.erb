@@ -5,19 +5,19 @@
       <div class="col-sm-6">
         <div class='card'>
           <div class='card-header'>
-            <h1><%= recipe.recipe_name %></h1>
+            <h1><%= recipe.recipe_name.capitalize %></h1>
           </div>
           <div class='card-body'>
             <p><%= recipe.meal_type.capitalize %>  |  <%= recipe.diet.capitalize %></p>
             <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Ingredients
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item"> <%= recipe.ingredients %> </a>
               </div>
             </div><br/>
-            <%= link_to 'Show', recipe, class:'card-link' %>
+            <%= link_to 'Full Recipe', recipe, class:"card-link" %>
           </div>
         </div><br/>
       </div><br/>
