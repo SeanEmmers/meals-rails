@@ -11,30 +11,26 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :recipe_name %>
-    <%= form.text_field :recipe_name %>
-  </div>
 
-  <div class="field">
-    <%= form.label :ingredients %>
-    <%= form.text_field :ingredients %>
-  </div>
+  <div class="field form-group">
+    <%= form.text_field :recipe_name, class:'form-control', placeholder:'Recipe Name'%>
+  </div><br/>
 
-  <div class="field">
-    <%= form.label :diet %>
-    <%= form.text_field :diet %>
-  </div>
+  <div class="field form-group">
+    <%= form.text_field :ingredients, class:'form-control', placeholder:'Ingredients' %>
+  </div><br/>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description %>
-  </div>
+  <div class="field form-group">
+    <%= form.text_field :diet, class:'form-control', placeholder:'Diet Type, Vegan...' %>
+  </div><br/>
 
-  <div class="field">
-    <%= form.label :meal_type %>
-    <%= form.text_field :meal_type %>
-  </div>
+  <div class="field form-group">
+    <%= form.text_field :meal_type, class:'form-control', placeholder:'Meal Type, breakfast...' %>
+  </div><br/>
+
+  <div class="field form-group">
+    <%= form.text_field :description, class:'form-control', placeholder:'Notes, or a short description' %>
+  </div><br/>
 
 
   <div class="actions">
