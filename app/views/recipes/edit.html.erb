@@ -1,6 +1,12 @@
-<h1>Editing Recipe</h1>
+<div class="card">
+  <div class="card-header">
+    <h1>Editing Recipe</h1>
+  </div>
+  <div class="card-body"><br/>
+    <%= render 'form', recipe: @recipe %>
+    <%= link_to 'Destroy', @recipe, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-outline-danger' %>
+  </div>
 
-<%= render 'form', recipe: @recipe %>
-
-<%= link_to 'Show', @recipe %> |
+<%= link_to 'Show', @recipe %>
 <%= link_to 'Back', recipes_path %>
+
