@@ -2,8 +2,9 @@ class RecipesController < ApplicationController
   before_action :set_recipe, only: %i[ show edit update destroy ]
 
   # GET /recipes or /recipes.json
+
   def index
-    @recipes = Recipe.all
+    @recipes = Recipe.search(params[:search])
   end
 
   # GET /recipes/1 or /recipes/1.json
@@ -64,6 +65,6 @@ class RecipesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def recipe_params
-      params.require(:recipe).permit(:recipe_name, :ingredients, :diet, :description, :meal_type)
+      params.require(:recipe).permit(:recipe_name, :ingredients, :diet, :description, :meal_type, :search)
     end
 end

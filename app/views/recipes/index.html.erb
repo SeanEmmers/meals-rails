@@ -1,5 +1,22 @@
 <h1>Recipes</h1>
+
+
+<div class='row'>
+<div class='col'>
+<%= form_tag recipes_path, method: :get, class:'form-inline' do %>
+  <%= text_field_tag :search, params[:search], class:'form-control rounded', placeholder:'Search' %>
+</div>
+<div class='col'>
+  <%= submit_tag "Search", class:'btn btn-outline-primary' %>
+<%end%>
+</div>
+<div class='col'>
+  <%= link_to 'Clear Search', recipes_path, class:'btn btn-outline-success btn-large' %>
+  </div>
+</div>
 <br/>
+
+
 <div class="row">
   <% @recipes.each do |recipe| %>
       <div class="col-sm-6">

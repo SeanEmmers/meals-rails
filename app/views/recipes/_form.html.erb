@@ -19,18 +19,18 @@
     <%= form.text_field :ingredients, class:'form-control', placeholder:'Ingredients' %>
   </div><br/>
 
-  <div class="field form-group">
-    <%= form.text_field :diet, class:'form-control', placeholder:'Diet Type, Vegan...' %>
+  <div class='row'>
+    <div class='col'>
+      <%= form.text_field :diet, class:'form-control', placeholder:'Diet Type, Vegan...' %>
+      </div><br/>
+    <div class='col'>
+      <%= form.text_field :meal_type, class:'form-control', placeholder:'Meal Type, Breakfast...' %>
+    </div>
   </div><br/>
 
   <div class="field form-group">
-    <%= form.text_field :meal_type, class:'form-control', placeholder:'Meal Type, breakfast...' %>
+   <textarea placeholder='Notes' class='form-control'><% form.text_field :description %></textarea>
   </div><br/>
-
-  <div class="field form-group">
-    <%= form.text_field :description, class:'form-control', placeholder:'Notes, or a short description' %>
-  </div><br/>
-
-    <%= form.submit class:"btn btn-outline-success" %>
-  </div>
+  
+   <%= form.submit class:"btn btn-outline-success" %>
 <% end %>
