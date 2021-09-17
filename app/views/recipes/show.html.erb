@@ -4,7 +4,7 @@
     <h5 class="card-title text-center" style='font-size: xx-large;'><%= @recipe.recipe_name.capitalize %></h5>
     <div class="card-body">
       <p style='font-weight: bold' class="card-text text-center"><%= @recipe.diet.capitalize%> | <%= @recipe.meal_type.capitalize%></p>
-      <p class="card-text">Ingredients: <%= @recipe.ingredients.split.each { |ingredient| ingredient }%></p>
+      <p class="card-text">Ingredients: <%= @recipe.ingredients %></p>
       <p class="card-text">Notes: <%= @recipe.description%></p>
       <%= link_to 'Edit', edit_recipe_path(@recipe), class:"btn btn-outline-secondary" %>
       <%= link_to 'Back', recipes_path, class:"btn btn-outline-dark" %>
