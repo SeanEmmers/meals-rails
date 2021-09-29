@@ -1,7 +1,15 @@
-# Friends APP
+### This project is a work in progress...
 
-### This is a full stack web app designed to store infomation about your friends
+## Save your recipe ideas
 
-A created this app to brush up on my rails knowledge, I followed guides online.
+I created this project as a space for my girlfriend and I to store our recipe ideas and help us choose what to eat. <br/>
 
-I also wanted to learn the basics of the Devise Gem.
+You can currently CRUD recipes. <br/>
+
+You can also filter the recipes by ingredient. <br/>
+
+I would next like to add the feature to search recipes by meal type.
+
+## Homepage Image
+<img width="1435" alt="Screenshot 2021-09-28 at 17 29 06" src="https://user-images.githubusercontent.com/80772036/135118478-69efde09-3394-4e19-b867-f288e7f16e99.png">
+>>>>>>> e7cae38d621f99cbb0a30787d5197b0fb012e91b
