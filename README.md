@@ -1,24 +1,7 @@
-# README
+# Friends APP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### This is a full stack web app designed to store infomation about your friends
 
-Things you may want to cover:
+A created this app to brush up on my rails knowledge, I followed guides online.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+I also wanted to learn the basics of the Devise Gem.
